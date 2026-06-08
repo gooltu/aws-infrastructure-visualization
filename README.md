@@ -1,8 +1,10 @@
 # AWS Infrastructure Visualizer
 
-> **[🚀 Live App → aws-infrastructure-visualization.vercel.app](https://aws-infrastructure-visualization.vercel.app/)**
+> **[🚀 Live Preview → aws-infrastructure-visualization.vercel.app](https://aws-infrastructure-visualization.vercel.app/)**
 
-An interactive, Miro-style canvas for visualizing AWS cloud infrastructure as a node-based diagram — with a built-in Terraform code editor and config explorer side by side.
+> **This is a VS Code Extension project.** It is designed to run from inside Visual Studio Code as a WebView panel alongside your Terraform files — not as a standalone web app. The Vercel link above is a live UI preview only.
+
+A **VS Code Extension** that renders your Terraform (HCL) infrastructure as an interactive, Miro-style node diagram directly inside the editor. Open a `.tf` file, launch the visualizer from the Command Palette or Editor Title Menu, and see your AWS resources — VPCs, subnets, EC2, RDS, ALB, S3 — laid out as a navigable canvas with a built-in Terraform config explorer and Monaco code editor, all without leaving VS Code.
 
 ---
 
@@ -75,9 +77,13 @@ The app is a single-page React + React Flow canvas — no routing, no backend, n
 
 ## Getting Started
 
+> **Intended usage:** Install the extension in VS Code, open any Terraform project, and run `Terraform: Open Visualizer` from the Command Palette (`⇧⌘P`). The graph panel opens beside your editor automatically.
+
+The Vercel deployment is a standalone UI preview for development and demonstration purposes. To work on the extension locally:
+
 ```bash
 npm install
-npm run dev        # dev server at localhost:5173
+npm run dev        # dev server at localhost:5173 (UI preview)
 npm run build      # tsc type-check + vite production build
 npm run preview    # serve the production build locally
 npx tsc --noEmit   # type-check only
