@@ -12,6 +12,8 @@ import {
 } from '@xyflow/react';
 import GroupNode from './nodes/GroupNode';
 import ResourceNode from './nodes/ResourceNode';
+import LeftPanel from './LeftPanel';
+import RightPanel from './RightPanel';
 import { initialNodes, initialEdges } from '../data/threeTierArchitecture';
 import type { GroupNodeData, ResourceNodeData } from '../types/aws';
 
@@ -79,7 +81,9 @@ export default function InfrastructureGraph() {
 
   return (
     <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', background: '#0a0a0f' }}>
-      <div style={{ flex: 1, position: 'relative' }}>
+      <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+        <LeftPanel />
+        <div style={{ flex: 1, position: 'relative' }}>
         <ReactFlow
           nodes={displayNodes}
           edges={displayEdges}
@@ -107,6 +111,8 @@ export default function InfrastructureGraph() {
             showInteractive={false}
           />
         </ReactFlow>
+        </div>
+        <RightPanel />
       </div>
 
       <StatusBar breadcrumb={breadcrumb} totalNodes={totalNodes} />
