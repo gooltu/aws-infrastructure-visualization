@@ -1,0 +1,877 @@
+{
+  "aws_emr_cluster": {
+    "icon_file_name": "Res_Amazon-EMR_Cluster_48.png",
+    "aws_service_name": "Amazon EMR",
+    "category": "Analytics"
+  },
+  "aws_mskconnect_connector": {
+    "icon_file_name": "Res_Amazon-MSK_Amazon-MSK-Connect_48.png",
+    "aws_service_name": "Amazon MSK",
+    "category": "Analytics"
+  },
+  "aws_osis_pipeline": {
+    "icon_file_name": "Res_Amazon-OpenSearch-Service_OpenSearch-Ingestion_48.png",
+    "aws_service_name": "Amazon OpenSearch Service",
+    "category": "Analytics"
+  },
+  "aws_athena_data_catalog": {
+    "icon_file_name": "Res_Amazon-Athena_Data-Source-Connectors_48.png",
+    "aws_service_name": "Amazon Athena",
+    "category": "Analytics"
+  },
+  "aws_glue_crawler": {
+    "icon_file_name": "Res_AWS-Glue_Crawler_48.png",
+    "aws_service_name": "AWS Glue",
+    "category": "Analytics"
+  },
+  "aws_glue_catalog_database": {
+    "icon_file_name": "Res_AWS-Glue_Data-Catalog_48.png",
+    "aws_service_name": "AWS Glue",
+    "category": "Analytics"
+  },
+  "aws_glue_data_quality_ruleset": {
+    "icon_file_name": "Res_AWS-Glue_Data-Quality_48.png",
+    "aws_service_name": "AWS Glue",
+    "category": "Analytics"
+  },
+  "aws_lakeformation_data_lake_settings": {
+    "icon_file_name": "Res_AWS-Lake-Formation_Data-Lake_48.png",
+    "aws_service_name": "AWS Lake Formation",
+    "category": "Analytics"
+  },
+  "aws_api_gateway_rest_api": {
+    "icon_file_name": "Res_Amazon-API-Gateway_Endpoint_48.png",
+    "aws_service_name": "Amazon API Gateway",
+    "category": "Application-Integration"
+  },
+  "aws_cloudwatch_event_bus": {
+    "icon_file_name": "Res_Amazon-EventBridge_Custom-Event-Bus_48.png",
+    "aws_service_name": "Amazon EventBridge",
+    "category": "Application-Integration"
+  },
+  "aws_pipes_pipe": {
+    "icon_file_name": "Res_Amazon-EventBridge_Pipes_48.png",
+    "aws_service_name": "Amazon EventBridge",
+    "category": "Application-Integration"
+  },
+  "aws_cloudwatch_event_rule": {
+    "icon_file_name": "Res_Amazon-EventBridge_Rule_48.png",
+    "aws_service_name": "Amazon EventBridge",
+    "category": "Application-Integration"
+  },
+  "aws_scheduler_schedule": {
+    "icon_file_name": "Res_Amazon-EventBridge_Scheduler_48.png",
+    "aws_service_name": "Amazon EventBridge",
+    "category": "Application-Integration"
+  },
+  "aws_schemas_schema": {
+    "icon_file_name": "Res_Amazon-EventBridge_Schema_48.png",
+    "aws_service_name": "Amazon EventBridge",
+    "category": "Application-Integration"
+  },
+  "aws_schemas_registry": {
+    "icon_file_name": "Res_Amazon-EventBridge_Schema-Registry_48.png",
+    "aws_service_name": "Amazon EventBridge",
+    "category": "Application-Integration"
+  },
+  "aws_mq_broker": {
+    "icon_file_name": "Res_Amazon-MQ_Broker_48.png",
+    "aws_service_name": "Amazon MQ",
+    "category": "Application-Integration"
+  },
+  "aws_sns_topic_subscription": {
+    "icon_file_name": "Res_Amazon-Simple-Notification-Service_HTTP-Notification_48.png",
+    "aws_service_name": "Amazon Simple Notification Service",
+    "category": "Application-Integration"
+  },
+  "aws_sns_topic": {
+    "icon_file_name": "Res_Amazon-Simple-Notification-Service_Topic_48.png",
+    "aws_service_name": "Amazon Simple Notification Service",
+    "category": "Application-Integration"
+  },
+  "aws_sqs_queue": {
+    "icon_file_name": "Res_Amazon-Simple-Queue-Service_Queue_48.png",
+    "aws_service_name": "Amazon Simple Queue Service",
+    "category": "Application-Integration"
+  },
+  "aws_managedblockchain_member": {
+    "icon_file_name": "Res_Amazon-Managed-Blockchain_Blockchain_48.png",
+    "aws_service_name": "Amazon Managed Blockchain",
+    "category": "Blockchain"
+  },
+  "aws_sesv2_email_identity": {
+    "icon_file_name": "Res_Amazon-Simple-Email-Service_Email_48.png",
+    "aws_service_name": "Amazon Simple Email Service",
+    "category": "Business-Applications"
+  },
+  "aws_ami": {
+    "icon_file_name": "Res_Amazon-EC2_AMI_48.png",
+    "aws_service_name": "Amazon EC2",
+    "category": "Compute"
+  },
+  "aws_autoscaling_group": {
+    "icon_file_name": "Res_Amazon-EC2_Auto-Scaling_48.png",
+    "aws_service_name": "Amazon EC2",
+    "category": "Compute"
+  },
+  "aws_eip": {
+    "icon_file_name": "Res_Amazon-EC2_Elastic-IP-Address_48.png",
+    "aws_service_name": "Amazon EC2",
+    "category": "Compute"
+  },
+  "aws_instance": {
+    "icon_file_name": "Res_Amazon-EC2_Instance_48.png",
+    "aws_service_name": "Amazon EC2",
+    "category": "Compute"
+  },
+  "aws_launch_template": {
+    "icon_file_name": "Res_Amazon-EC2_Instances_48.png",
+    "aws_service_name": "Amazon EC2",
+    "category": "Compute"
+  },
+  "aws_spot_instance_request": {
+    "icon_file_name": "Res_Amazon-EC2_Spot-Instance_48.png",
+    "aws_service_name": "Amazon EC2",
+    "category": "Compute"
+  },
+  "aws_elastic_beanstalk_application": {
+    "icon_file_name": "Res_AWS-Elastic-Beanstalk_Application_48.png",
+    "aws_service_name": "AWS Elastic Beanstalk",
+    "category": "Compute"
+  },
+  "aws_elastic_beanstalk_environment": {
+    "icon_file_name": "Res_AWS-Elastic-Beanstalk_Deployment_48.png",
+    "aws_service_name": "AWS Elastic Beanstalk",
+    "category": "Compute"
+  },
+  "aws_lambda_function": {
+    "icon_file_name": "Res_AWS-Lambda_Lambda-Function_48.png",
+    "aws_service_name": "AWS Lambda",
+    "category": "Compute"
+  },
+  "aws_ecr_repository": {
+    "icon_file_name": "Res_Amazon-Elastic-Container-Registry_Registry_48.png",
+    "aws_service_name": "Amazon Elastic Container Registry",
+    "category": "Containers"
+  },
+  "aws_ecs_cluster": {
+    "icon_file_name": "Res_Amazon-EC2_Auto-Scaling_48.png",
+    "aws_service_name": "Amazon Elastic Container Cluster",
+    "category": "Compute"
+  },
+  "aws_ecs_service": {
+    "icon_file_name": "Res_Amazon-Elastic-Container-Service_Service_48.png",
+    "aws_service_name": "Amazon Elastic Container Service",
+    "category": "Containers"
+  },
+  "aws_ecs_task_definition": {
+    "icon_file_name": "Res_Amazon-Elastic-Container-Service_Task_48.png",
+    "aws_service_name": "Amazon Elastic Container Service",
+    "category": "Containers"
+  },
+  "aws_eks_cluster": {
+    "icon_file_name": "Res_Amazon-Elastic-Kubernetes-Service_EKS-on-Outposts_48.png",
+    "aws_service_name": "Amazon Elastic Kubernetes Service",
+    "category": "Containers"
+  },
+  "aws_rds_cluster_instance": {
+    "icon_file_name": "Res_Amazon-Aurora_Amazon-Aurora-Instance-alternate_48.png",
+    "aws_service_name": "Amazon Aurora",
+    "category": "Database"
+  },
+  "aws_db_instance": {
+    "icon_file_name": "Res_Amazon-Aurora_Amazon-RDS-Instance_48.png",
+    "aws_service_name": "Amazon RDS",
+    "category": "Database"
+  },
+  "aws_rds_cluster": {
+    "icon_file_name": "Res_Amazon-Aurora-Instance_48.png",
+    "aws_service_name": "Amazon Aurora",
+    "category": "Database"
+  },
+  "aws_docdbelastic_cluster": {
+    "icon_file_name": "Res_Amazon-DocumentDB_Elastic-Clusters_48.png",
+    "aws_service_name": "Amazon DocumentDB",
+    "category": "Database"
+  },
+  "aws_dax_cluster": {
+    "icon_file_name": "Res_Amazon-DynamoDB_Amazon-DynamoDB-Accelerator_48.png",
+    "aws_service_name": "Amazon DynamoDB",
+    "category": "Database"
+  },
+  "aws_dynamodb_table": {
+    "icon_file_name": "Res_Amazon-DynamoDB_Table_48.png",
+    "aws_service_name": "Amazon DynamoDB",
+    "category": "Database"
+  },
+  "aws_elasticache_cluster": {
+    "icon_file_name": "Res_Amazon-ElastiCache_ElastiCache-for-Memcached_48.png",
+    "aws_service_name": "Amazon ElastiCache",
+    "category": "Database"
+  },
+  "aws_elasticache_replication_group": {
+    "icon_file_name": "Res_Amazon-ElastiCache_ElastiCache-for-Redis_48.png",
+    "aws_service_name": "Amazon ElastiCache",
+    "category": "Database"
+  },
+  "aws_db_proxy": {
+    "icon_file_name": "Res_Amazon-RDS-Proxy-Instance_48.png",
+    "aws_service_name": "Amazon RDS",
+    "category": "Database"
+  },
+  "aws_dms_replication_task": {
+    "icon_file_name": "Res_AWS-Database-Migration-Service_Database-migration-workflow-or-job_48.png",
+    "aws_service_name": "AWS Database Migration Service",
+    "category": "Database"
+  },
+  "aws_cloud9_environment_ec2": {
+    "icon_file_name": "Res_AWS-Cloud9_Cloud9_48.png",
+    "aws_service_name": "AWS Cloud9",
+    "category": "Developer-Tools"
+  },
+  "aws_workspaces_workspace": {
+    "icon_file_name": "Res_Amazon-WorkSpaces-Family_Amazon-WorkSpaces_48.png",
+    "aws_service_name": "Amazon WorkSpaces",
+    "category": "End-User-Computing"
+  },
+  "aws_workspacesweb_portal": {
+    "icon_file_name": "Res_Amazon-WorkSpaces-Family_Amazon-WorkSpaces-Web_48.png",
+    "aws_service_name": "Amazon WorkSpaces",
+    "category": "End-User-Computing"
+  },
+  "aws_location_geofence_collection": {
+    "icon_file_name": "Res_Amazon-Location-Service_Geofence_48.png",
+    "aws_service_name": "Amazon Location Service",
+    "category": "Front-End-Web-Mobile"
+  },
+  "aws_location_map": {
+    "icon_file_name": "Res_Amazon-Location-Service_Map _48.png",
+    "aws_service_name": "Amazon Location Service",
+    "category": "Front-End-Web-Mobile"
+  },
+  "aws_location_place_index": {
+    "icon_file_name": "Res_Amazon-Location-Service_Place_48.png",
+    "aws_service_name": "Amazon Location Service",
+    "category": "Front-End-Web-Mobile"
+  },
+  "aws_location_route_calculator": {
+    "icon_file_name": "Res_Amazon-Location-Service_Routes_48.png",
+    "aws_service_name": "Amazon Location Service",
+    "category": "Front-End-Web-Mobile"
+  },
+  "aws_location_tracker": {
+    "icon_file_name": "Res_Amazon-Location-Service_Track _48.png",
+    "aws_service_name": "Amazon Location Service",
+    "category": "Front-End-Web-Mobile"
+  },
+  "aws_amplify_app": {
+    "icon_file_name": "Res_AWS-Amplify_AWS-Amplify-Studio_48.png",
+    "aws_service_name": "AWS Amplify",
+    "category": "Front-End-Web-Mobile"
+  },
+  "aws_iot_certificate": {
+    "icon_file_name": "Res_AWS-IoT_Certificate_48.png",
+    "aws_service_name": "AWS IoT",
+    "category": "IoT"
+  },
+  "aws_iot_policy": {
+    "icon_file_name": "Res_AWS-IoT_Policy_48.png",
+    "aws_service_name": "AWS IoT",
+    "category": "IoT"
+  },
+  "aws_iotanalytics_channel": {
+    "icon_file_name": "Res_AWS-IoT-Analytics_Channel_48.png",
+    "aws_service_name": "AWS IoT Analytics",
+    "category": "IoT"
+  },
+  "aws_iotanalytics_datastore": {
+    "icon_file_name": "Res_AWS-IoT-Analytics_Data-Store_48.png",
+    "aws_service_name": "AWS IoT Analytics",
+    "category": "IoT"
+  },
+  "aws_iotanalytics_dataset": {
+    "icon_file_name": "Res_AWS-IoT-Analytics_Dataset_48.png",
+    "aws_service_name": "AWS IoT Analytics",
+    "category": "IoT"
+  },
+  "aws_iotanalytics_pipeline": {
+    "icon_file_name": "Res_AWS-IoT-Analytics_Pipeline_48.png",
+    "aws_service_name": "AWS IoT Analytics",
+    "category": "IoT"
+  },
+  "aws_iotfleethub_application": {
+    "icon_file_name": "Res_AWS-IoT-Device-Management_Fleet-Hub_48.png",
+    "aws_service_name": "AWS IoT Device Management",
+    "category": "IoT"
+  },
+  "aws_greengrassv2_component_version": {
+    "icon_file_name": "Res_AWS-IoT-Greengrass_Component_48.png",
+    "aws_service_name": "AWS IoT Greengrass",
+    "category": "IoT"
+  },
+  "aws_iot_topic_rule": {
+    "icon_file_name": "Res_AWS-IoT-Rule_48.png",
+    "aws_service_name": "AWS IoT",
+    "category": "IoT"
+  },
+  "aws_iotsitewise_asset": {
+    "icon_file_name": "Res_AWS-IoT-SiteWise_Asset_48.png",
+    "aws_service_name": "AWS IoT SiteWise",
+    "category": "IoT"
+  },
+  "aws_iotsitewise_asset_model": {
+    "icon_file_name": "Res_AWS-IoT-SiteWise_Asset-Model_48.png",
+    "aws_service_name": "AWS IoT SiteWise",
+    "category": "IoT"
+  },
+  "aws_sagemaker_model": {
+    "icon_file_name": "Res_Amazon-SageMaker_Model_48.png",
+    "aws_service_name": "Amazon SageMaker",
+    "category": "Machine-Learning"
+  },
+  "aws_sagemaker_notebook_instance": {
+    "icon_file_name": "Res_Amazon-SageMaker_Notebook_48.png",
+    "aws_service_name": "Amazon SageMaker",
+    "category": "Machine-Learning"
+  },
+  "aws_cloudwatch_metric_alarm": {
+    "icon_file_name": "Res_Amazon-CloudWatch_Alarm_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_oam_link": {
+    "icon_file_name": "Res_Amazon-CloudWatch_Cross-account-Observability_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_cloudwatch_log_data_protection_policy": {
+    "icon_file_name": "Res_Amazon-CloudWatch_Data-Protection_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_evidently_project": {
+    "icon_file_name": "Res_Amazon-CloudWatch_Evidently_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_cloudwatch_log_group": {
+    "icon_file_name": "Res_Amazon-CloudWatch_Logs_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_rum_app_monitor": {
+    "icon_file_name": "Res_Amazon-CloudWatch_RUM_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_synthetics_canary": {
+    "icon_file_name": "Res_Amazon-CloudWatch_Synthetics_48.png",
+    "aws_service_name": "Amazon CloudWatch",
+    "category": "Management-Governance"
+  },
+  "aws_cloudformation_stack": {
+    "icon_file_name": "Res_AWS-CloudFormation_Stack_48.png",
+    "aws_service_name": "AWS CloudFormation",
+    "category": "Management-Governance"
+  },
+  "aws_cloudtrail_event_data_store": {
+    "icon_file_name": "Res_AWS-CloudTrail_CloudTrail-Lake_48.png",
+    "aws_service_name": "AWS CloudTrail",
+    "category": "Management-Governance"
+  },
+  "aws_opsworks_application": {
+    "icon_file_name": "Res_AWS-OpsWorks_Apps_48.png",
+    "aws_service_name": "AWS OpsWorks",
+    "category": "Management-Governance"
+  },
+  "aws_opsworks_instance": {
+    "icon_file_name": "Res_AWS-OpsWorks_Instances_48.png",
+    "aws_service_name": "AWS OpsWorks",
+    "category": "Management-Governance"
+  },
+  "aws_opsworks_permission": {
+    "icon_file_name": "Res_AWS-OpsWorks_Permissions_48.png",
+    "aws_service_name": "AWS OpsWorks",
+    "category": "Management-Governance"
+  },
+  "aws_opsworks_stack": {
+    "icon_file_name": "Res_AWS-OpsWorks_Stack2_48.png",
+    "aws_service_name": "AWS OpsWorks",
+    "category": "Management-Governance"
+  },
+  "aws_organizations_account": {
+    "icon_file_name": "Res_AWS-Organizations_Account_48.png",
+    "aws_service_name": "AWS Organizations",
+    "category": "Management-Governance"
+  },
+  "aws_organizations_organizational_unit": {
+    "icon_file_name": "Res_AWS-Organizations_Organizational-Unit_48.png",
+    "aws_service_name": "AWS Organizations",
+    "category": "Management-Governance"
+  },
+  "aws_ssm_document": {
+    "icon_file_name": "Res_AWS-Systems-Manager_Documents_48.png",
+    "aws_service_name": "AWS Systems Manager",
+    "category": "Management-Governance"
+  },
+  "aws_ssmincidents_response_plan": {
+    "icon_file_name": "Res_AWS-Systems-Manager_Incident-Manager_48.png",
+    "aws_service_name": "AWS Systems Manager",
+    "category": "Management-Governance"
+  },
+  "aws_ssm_maintenance_window": {
+    "icon_file_name": "Res_AWS-Systems-Manager_Maintenance-Windows_48.png",
+    "aws_service_name": "AWS Systems Manager",
+    "category": "Management-Governance"
+  },
+  "aws_ssm_parameter": {
+    "icon_file_name": "Res_AWS-Systems-Manager_Parameter-Store_48.png",
+    "aws_service_name": "AWS Systems Manager",
+    "category": "Management-Governance"
+  },
+  "aws_ssm_patch_baseline": {
+    "icon_file_name": "Res_AWS-Systems-Manager_Patch-Manager_48.png",
+    "aws_service_name": "AWS Systems Manager",
+    "category": "Management-Governance"
+  },
+  "aws_ssm_association": {
+    "icon_file_name": "Res_AWS-Systems-Manager_State-Manager_48.png",
+    "aws_service_name": "AWS Systems Manager",
+    "category": "Management-Governance"
+  },
+  "aws_mediaconnect_gateway": {
+    "icon_file_name": "Res_AWS-Elemental-MediaConnect_MediaConnect-Gateway_48.png",
+    "aws_service_name": "AWS Elemental MediaConnect",
+    "category": "Media-Services"
+  },
+  "aws_datasync_agent": {
+    "icon_file_name": "Res_AWS-Datasync_Agent_48.png",
+    "aws_service_name": "AWS DataSync",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_datasync_discovery_job": {
+    "icon_file_name": "Res_AWS-DataSync_Discovery_48.png",
+    "aws_service_name": "AWS DataSync",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_m2_environment": {
+    "icon_file_name": "Res_AWS-Mainframe-Modernization_Runtime_48.png",
+    "aws_service_name": "AWS Mainframe Modernization",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_refactorspaces_application": {
+    "icon_file_name": "Res_AWS-Migration-Hub_Refactor-Spaces-Applications_48.png",
+    "aws_service_name": "AWS Migration Hub",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_refactorspaces_environment": {
+    "icon_file_name": "Res_AWS-Migration-Hub_Refactor-Spaces-Environments_48.png",
+    "aws_service_name": "AWS Migration Hub",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_refactorspaces_service": {
+    "icon_file_name": "Res_AWS-Migration-Hub_Refactor-Spaces-Services_48.png",
+    "aws_service_name": "AWS Migration Hub",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_transfer_connector": {
+    "icon_file_name": "Res_AWS-Transfer-Family_AWS-AS2_48.png",
+    "aws_service_name": "AWS Transfer Family",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_transfer_server": {
+    "icon_file_name": "Res_AWS-Transfer-Family_AWS-FTP_48.png",
+    "aws_service_name": "AWS Transfer Family",
+    "category": "Migration-and-Transfer"
+  },
+  "aws_cloudfront_distribution": {
+    "icon_file_name": "Res_Amazon-CloudFront_Download-Distribution_48.png",
+    "aws_service_name": "Amazon CloudFront",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_cloudfront_function": {
+    "icon_file_name": "Res_Amazon-CloudFront_Functions_48.png",
+    "aws_service_name": "Amazon CloudFront",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53recoveryreadiness_readiness_check": {
+    "icon_file_name": "Res_Amazon-Route-53_Readiness-Checks_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53_resolver_endpoint": {
+    "icon_file_name": "Res_Amazon-Route-53_Resolver_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53_resolver_firewall_domain_list": {
+    "icon_file_name": "Res_Amazon-Route-53_Resolver-DNS-Firewall_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53_resolver_query_log_config": {
+    "icon_file_name": "Res_Amazon-Route-53_Resolver-Query-Logging_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53recoverycontrolconfig_cluster": {
+    "icon_file_name": "Res_Amazon-Route-53_Route-53-Application-Recovery-Controller_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route_table": {
+    "icon_file_name": "Res_Amazon-Route-53_Route-Table_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53recoverycontrolconfig_routing_control": {
+    "icon_file_name": "Res_Amazon-Route-53_Routing-Controls_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_route53_zone": {
+    "icon_file_name": "Res_Amazon-Route-53-Hosted-Zone_48.png",
+    "aws_service_name": "Amazon Route 53",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_ec2_carrier_gateway": {
+    "icon_file_name": "Res_Amazon-VPC_Carrier-Gateway_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_customer_gateway": {
+    "icon_file_name": "Res_Amazon-VPC_Customer-Gateway_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_network_interface": {
+    "icon_file_name": "Res_Amazon-VPC_Elastic-Network-Interface_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_vpc_endpoint": {
+    "icon_file_name": "Res_Amazon-VPC_Endpoints_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_flow_log": {
+    "icon_file_name": "Res_Amazon-VPC_Flow-Logs_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_internet_gateway": {
+    "icon_file_name": "Res_Amazon-VPC_Internet-Gateway_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_nat_gateway": {
+    "icon_file_name": "Res_Amazon-VPC_NAT-Gateway_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_ec2_network_insights_analysis": {
+    "icon_file_name": "Res_Amazon-VPC_Network-Access-Analyzer_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_network_acl": {
+    "icon_file_name": "Res_Amazon-VPC_Network-Access-Control-List_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_vpc_peering_connection": {
+    "icon_file_name": "Res_Amazon-VPC_Peering-Connection_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_ec2_network_insights_path": {
+    "icon_file_name": "Res_Amazon-VPC_Reachability-Analyzer_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_ec2_traffic_mirror_session": {
+    "icon_file_name": "Res_Amazon-VPC_Traffic-Mirroring_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_vpc": {
+    "icon_file_name": "Res_Amazon-VPC_Virtual-private-cloud-VPC_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_vpn_connection": {
+    "icon_file_name": "Res_Amazon-VPC_VPN-Connection_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_vpn_gateway": {
+    "icon_file_name": "Res_Amazon-VPC_VPN-Gateway_48.png",
+    "aws_service_name": "Amazon VPC",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_appmesh_mesh": {
+    "icon_file_name": "Res_AWS-App-Mesh_Mesh_48.png",
+    "aws_service_name": "AWS App Mesh",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_appmesh_virtual_gateway": {
+    "icon_file_name": "Res_AWS-App-Mesh_Virtual-Gateway_48.png",
+    "aws_service_name": "AWS App Mesh",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_appmesh_virtual_node": {
+    "icon_file_name": "Res_AWS-App-Mesh_Virtual-Node_48.png",
+    "aws_service_name": "AWS App Mesh",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_appmesh_virtual_router": {
+    "icon_file_name": "Res_AWS-App-Mesh_Virtual-Router_48.png",
+    "aws_service_name": "AWS App Mesh",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_appmesh_virtual_service": {
+    "icon_file_name": "Res_AWS-App-Mesh_Virtual-Service_48.png",
+    "aws_service_name": "AWS App Mesh",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_service_discovery_private_dns_namespace": {
+    "icon_file_name": "Res_AWS-Cloud-Map_Namespace_48.png",
+    "aws_service_name": "AWS Cloud Map",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_service_discovery_service": {
+    "icon_file_name": "Res_AWS-Cloud-Map_Service_48.png",
+    "aws_service_name": "AWS Cloud Map",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_networkmanager_core_network": {
+    "icon_file_name": "Res_AWS-Cloud-WAN_Core-Network-Edge_48.png",
+    "aws_service_name": "AWS Cloud WAN",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_networkmanager_transit_gateway_route_table_attachment": {
+    "icon_file_name": "Res_AWS-Cloud-WAN_Transit-Gateway-Route-Table-Attachment_48.png",
+    "aws_service_name": "AWS Cloud WAN",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_dx_gateway": {
+    "icon_file_name": "Res_AWS-Direct-Connect_Gateway_48.png",
+    "aws_service_name": "AWS Direct Connect",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_ec2_transit_gateway_vpc_attachment": {
+    "icon_file_name": "Res_AWS-Transit-Gateway_Attachment_48.png",
+    "aws_service_name": "AWS Transit Gateway",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_lb": {
+    "icon_file_name": "Res_Elastic-Load-Balancing_Application-Load-Balancer_48.png",
+    "aws_service_name": "Elastic Load Balancing",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_elb": {
+    "icon_file_name": "Res_Elastic-Load-Balancing_Classic-Load-Balancer_48.png",
+    "aws_service_name": "Elastic Load Balancing",
+    "category": "Networking-and-Content-Delivery"
+  },
+  "aws_acmpca_certificate_authority": {
+    "icon_file_name": "Res_AWS-Certificate-Manager_Certificate-Authority_48.png",
+    "aws_service_name": "AWS Certificate Manager",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_directory_service_directory": {
+    "icon_file_name": "Res_AWS-Directory-Service_AWS-Managed-Microsoft-AD_48.png",
+    "aws_service_name": "AWS Directory Service",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_accessanalyzer_analyzer": {
+    "icon_file_name": "Res_AWS-Identity-Access-Management_IAM-Access-Analyzer_48.png",
+    "aws_service_name": "AWS Identity and Access Management",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_rolesanywhere_trust_anchor": {
+    "icon_file_name": "Res_AWS-Identity-Access-Management_IAM-Roles-Anywhere_48.png",
+    "aws_service_name": "AWS Identity and Access Management",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_iam_access_key": {
+    "icon_file_name": "Res_AWS-Identity-Access-Management_Long-Term-Security-Credential_48.png",
+    "aws_service_name": "AWS Identity and Access Management",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_iam_virtual_mfa_device": {
+    "icon_file_name": "Res_AWS-Identity-Access-Management_MFA-Token_48.png",
+    "aws_service_name": "AWS Identity and Access Management",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_iam_policy": {
+    "icon_file_name": "Res_AWS-Identity-Access-Management_Permissions_48.png",
+    "aws_service_name": "AWS Identity and Access Management",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_iam_role": {
+    "icon_file_name": "Res_AWS-Identity-Access-Management_Role_48.png",
+    "aws_service_name": "AWS Identity and Access Management",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_kms_custom_key_store": {
+    "icon_file_name": "Res_AWS-Key-Management-Service_External-Key-Store_48.png",
+    "aws_service_name": "AWS Key Management Service",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_networkfirewall_firewall": {
+    "icon_file_name": "Res_AWS-Network-Firewall_Endpoints_48.png",
+    "aws_service_name": "AWS Network Firewall",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_shield_protection": {
+    "icon_file_name": "Res_AWS-Shield_AWS-Shield-Advanced_48.png",
+    "aws_service_name": "AWS Shield",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_wafv2_rule_group": {
+    "icon_file_name": "Res_AWS-WAF_Filtering-Rule_48.png",
+    "aws_service_name": "AWS WAF",
+    "category": "Security-Identity-and-Compliance"
+  },
+  "aws_dlm_lifecycle_policy": {
+    "icon_file_name": "Res_Amazon-Elastic-Block-Store_Amazon-Data-Lifecycle-Manager_48.png",
+    "aws_service_name": "Amazon Elastic Block Store",
+    "category": "Storage"
+  },
+  "aws_ebs_snapshot": {
+    "icon_file_name": "Res_Amazon-Elastic-Block-Store_Snapshot_48.png",
+    "aws_service_name": "Amazon Elastic Block Store",
+    "category": "Storage"
+  },
+  "aws_ebs_volume": {
+    "icon_file_name": "Res_Amazon-Elastic-Block-Store_Volume_48.png",
+    "aws_service_name": "Amazon Elastic Block Store",
+    "category": "Storage"
+  },
+  "aws_efs_file_system": {
+    "icon_file_name": "Res_Amazon-Elastic-File-System_File-System_48.png",
+    "aws_service_name": "Amazon Elastic File System",
+    "category": "Storage"
+  },
+  "aws_fsx_file_cache": {
+    "icon_file_name": "Res_Amazon-File-Cache_Hybrid-NFS-linked-datasets_48.png",
+    "aws_service_name": "Amazon File Cache",
+    "category": "Storage"
+  },
+  "aws_s3_bucket": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_Bucket_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3_access_point": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_General-Access-Points_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3_object": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_Object_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3_bucket_intelligent_tiering_configuration": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-Intelligent-Tiering_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3control_multi_region_access_point": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-Multi-Region-Access-Points_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3control_object_lambda_access_point": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-Object-Lambda_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3_bucket_object_lock_configuration": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-Object-Lock_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3outposts_endpoint": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-On-Outposts_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3_bucket_replication_configuration": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-Replication_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_s3control_storage_lens_configuration": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service_S3-Storage-Lens_48.png",
+    "aws_service_name": "Amazon Simple Storage Service",
+    "category": "Storage"
+  },
+  "aws_glacier_vault": {
+    "icon_file_name": "Res_Amazon-Simple-Storage-Service-Glacier_Vault_48.png",
+    "aws_service_name": "Amazon S3 Glacier",
+    "category": "Storage"
+  },
+  "aws_backup_framework": {
+    "icon_file_name": "Res_AWS-Backup_Audit-Manager_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_plan": {
+    "icon_file_name": "Res_AWS-Backup_Backup-Plan_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_restore_testing_plan": {
+    "icon_file_name": "Res_AWS-Backup_Backup-Restore_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_vault": {
+    "icon_file_name": "Res_AWS-Backup_Backup-Vault_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_report_plan": {
+    "icon_file_name": "Res_AWS-Backup_Compliance-Reporting_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_gateway_gateway": {
+    "icon_file_name": "Res_AWS-Backup_Gateway_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_legal_hold": {
+    "icon_file_name": "Res_AWS-Backup_Legal-Hold_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_backup_vault_lock_configuration": {
+    "icon_file_name": "Res_AWS-Backup_Vault-Lock_48.png",
+    "aws_service_name": "AWS Backup",
+    "category": "Storage"
+  },
+  "aws_storagegateway_cached_iscsi_volume": {
+    "icon_file_name": "Res_AWS-Storage-Gateway_Cached-Volume_48.png",
+    "aws_service_name": "AWS Storage Gateway",
+    "category": "Storage"
+  },
+  "aws_storagegateway_gateway": {
+    "icon_file_name": "Res_AWS-Storage-Gateway_File-Gateway_48.png",
+    "aws_service_name": "AWS Storage Gateway",
+    "category": "Storage"
+  },
+  "aws_storagegateway_stored_iscsi_volume": {
+    "icon_file_name": "Res_AWS-Storage-Gateway_Noncached-Volume_48.png",
+    "aws_service_name": "AWS Storage Gateway",
+    "category": "Storage"
+  },
+  "aws_storagegateway_tape_pool": {
+    "icon_file_name": "Res_AWS-Storage-Gateway_Tape-Gateway_48.png",
+    "aws_service_name": "AWS Storage Gateway",
+    "category": "Storage"
+  }
+}

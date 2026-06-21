@@ -4,6 +4,7 @@ import {
   Controls,
   Background,
   BackgroundVariant,
+  Panel,
   useNodesState,
   useEdgesState,
   type Node,
@@ -12,6 +13,7 @@ import {
 } from '@xyflow/react';
 import GroupNode from './nodes/GroupNode';
 import ResourceNode from './nodes/ResourceNode';
+import ResourcesModal from './ResourcesModal';
 import { initialNodes, initialEdges } from '../data/threeTierArchitecture';
 import type { GroupNodeData, ResourceNodeData } from '../types/aws';
 
@@ -36,6 +38,7 @@ export default function InfrastructureGraph() {
   const [nodes, , onNodesChange] = useNodesState<AWSNode>(initialNodes as AWSNode[]);
   const [edges, , onEdgesChange] = useEdgesState(initialEdges);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [showResourcesModal, setShowResourcesModal] = useState(false);
 
   const displayNodes = useMemo<AWSNode[]>(() => {
     return nodes.map(node => ({
@@ -106,8 +109,31 @@ export default function InfrastructureGraph() {
             position="top-right"
             showInteractive={false}
           />
+          <Panel position="top-left">
+            <button
+              onClick={() => setShowResourcesModal(true)}
+              style={{
+                background: '#0d1117',
+                border: '1px solid #2d3748',
+                borderRadius: 6,
+                color: '#94a3b8',
+                cursor: 'pointer',
+                fontSize: 12,
+                fontWeight: 500,
+                padding: '6px 12px',
+                letterSpacing: '0.2px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+              }}
+            >
+              View all resources
+            </button>
+          </Panel>
         </ReactFlow>
       </div>
+
+      {showResourcesModal && (
+        <ResourcesModal onClose={() => setShowResourcesModal(false)} />
+      )}
 
       <StatusBar breadcrumb={breadcrumb} totalNodes={totalNodes} />
     </div>
