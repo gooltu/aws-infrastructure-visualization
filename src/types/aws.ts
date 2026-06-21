@@ -1,4 +1,4 @@
-export type ResourceSubtype = 'ec2' | 'rds' | 'alb' | 's3' | 'lambda' | 'cloudfront';
+export type ResourceSubtype = 'ec2' | 'rds' | 'alb' | 's3' | 'lambda' | 'cloudfront' | 'igw';
 export type GroupSubtype = 'region' | 'vpc' | 'az' | 'subnet';
 
 export interface GroupNodeData {
