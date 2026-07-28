@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import {
   ReactFlow,
   Controls,
@@ -14,7 +14,9 @@ import {
 import GroupNode from './nodes/GroupNode';
 import ResourceNode from './nodes/ResourceNode';
 import ResourcesModal from './ResourcesModal';
-import { initialNodes, initialEdges } from '../data/threeTierArchitecture';
+import SettingsPanel from './SettingsPanel';
+import { runPipeline } from '../pipeline';
+import { useSettings } from '../settings/SettingsContext';
 import type { GroupNodeData, ResourceNodeData } from '../types/aws';
 
 const nodeTypes: NodeTypes = {
@@ -35,10 +37,46 @@ function buildBreadcrumb(nodeId: string, nodes: AWSNode[]): string {
 }
 
 export default function InfrastructureGraph() {
-  const [nodes, , onNodesChange] = useNodesState<AWSNode>(initialNodes as AWSNode[]);
-  const [edges, , onEdgesChange] = useEdgesState(initialEdges);
+  const { settings } = useSettings();
+  const [nodes, setNodes, onNodesChange] = useNodesState<AWSNode>([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [showResourcesModal, setShowResourcesModal] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Cache the fetched plan so re-layouts don't re-fetch.
+  const planRef = useRef<unknown>(null);
+
+  // Re-run layout when tiers or subnet ordering changes (showEdges is display-only).
+  const layoutKey = useMemo(
+    () => JSON.stringify({ tiers: settings.tiers, publicSubnetsFirst: settings.publicSubnetsFirst }),
+    [settings.tiers, settings.publicSubnetsFirst],
+  );
+
+  useEffect(() => {
+    async function load() {
+      setLoading(true);
+      setError(null);
+      try {
+        if (!planRef.current) {
+          const response = await fetch('/tfplan.json');
+          if (!response.ok) throw new Error(`Failed to fetch tfplan.json: ${response.status}`);
+          planRef.current = await response.json();
+        }
+        const data = await runPipeline(planRef.current as Parameters<typeof runPipeline>[0], settings);
+        setNodes(data.nodes as AWSNode[]);
+        setEdges(data.edges);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : String(err));
+      } finally {
+        setLoading(false);
+      }
+    }
+    load();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [layoutKey]);
 
   const displayNodes = useMemo<AWSNode[]>(() => {
     return nodes.map(node => ({
@@ -48,6 +86,7 @@ export default function InfrastructureGraph() {
   }, [nodes, selectedNodeId]);
 
   const displayEdges = useMemo<Edge[]>(() => {
+    if (!settings.showEdges) return [];
     const hasSelection = selectedNodeId !== null;
     return edges.map(edge => {
       const connected = edge.source === selectedNodeId || edge.target === selectedNodeId;
@@ -63,7 +102,7 @@ export default function InfrastructureGraph() {
         zIndex: connected ? 1000 : 0,
       };
     });
-  }, [edges, selectedNodeId]);
+  }, [edges, selectedNodeId, settings.showEdges]);
 
   const breadcrumb = useMemo(() => {
     if (!selectedNodeId) return null;
@@ -83,6 +122,24 @@ export default function InfrastructureGraph() {
   return (
     <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', background: '#0a0a0f' }}>
       <div style={{ flex: 1, position: 'relative' }}>
+        {loading && (
+          <div style={{
+            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center',
+            justifyContent: 'center', zIndex: 10, color: '#4b5563', fontSize: 13,
+            fontFamily: 'monospace', letterSpacing: '0.3px',
+          }}>
+            Parsing infrastructure plan…
+          </div>
+        )}
+        {error && (
+          <div style={{
+            position: 'absolute', inset: 0, display: 'flex', alignItems: 'center',
+            justifyContent: 'center', zIndex: 10, color: '#ef4444', fontSize: 13,
+            fontFamily: 'monospace',
+          }}>
+            {error}
+          </div>
+        )}
         <ReactFlow
           nodes={displayNodes}
           edges={displayEdges}
@@ -110,23 +167,23 @@ export default function InfrastructureGraph() {
             showInteractive={false}
           />
           <Panel position="top-left">
-            <button
-              onClick={() => setShowResourcesModal(true)}
-              style={{
-                background: '#0d1117',
-                border: '1px solid #2d3748',
-                borderRadius: 6,
-                color: '#94a3b8',
-                cursor: 'pointer',
-                fontSize: 12,
-                fontWeight: 500,
-                padding: '6px 12px',
-                letterSpacing: '0.2px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
-              }}
-            >
-              View all resources
-            </button>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button
+                onClick={() => setShowResourcesModal(true)}
+                style={panelBtnStyle}
+              >
+                View all resources
+              </button>
+              <button
+                onClick={() => setShowSettings(s => !s)}
+                style={{
+                  ...panelBtnStyle,
+                  ...(showSettings ? { borderColor: '#4dabf7', color: '#4dabf7' } : {}),
+                }}
+              >
+                ⚙ Settings
+              </button>
+            </div>
           </Panel>
         </ReactFlow>
       </div>
@@ -135,11 +192,27 @@ export default function InfrastructureGraph() {
         <ResourcesModal onClose={() => setShowResourcesModal(false)} />
       )}
 
+      {showSettings && (
+        <SettingsPanel onClose={() => setShowSettings(false)} />
+      )}
+
       <StatusBar breadcrumb={breadcrumb} totalNodes={totalNodes} />
     </div>
   );
 }
 
+const panelBtnStyle: React.CSSProperties = {
+  background: '#0d1117',
+  border: '1px solid #2d3748',
+  borderRadius: 6,
+  color: '#94a3b8',
+  cursor: 'pointer',
+  fontSize: 12,
+  fontWeight: 500,
+  padding: '6px 12px',
+  letterSpacing: '0.2px',
+  boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+};
 
 function StatusBar({ breadcrumb, totalNodes }: { breadcrumb: string | null; totalNodes: number }) {
   return (
